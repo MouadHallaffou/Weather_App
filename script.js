@@ -52,7 +52,7 @@ const createWeatherCard = (cityName, weatherItem, index) => {
  */
 const getWeatherDetails = (cityName) => {
   // URL de l'API pour récupérer les données météo (actuelles et prévisions sur 5 jours)
-  const WEATHER_API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=5`;
+  const WEATHER_API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=5`;
 
   // Envoi de la requête à l'API
   fetch(WEATHER_API_URL)
